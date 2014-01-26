@@ -27,7 +27,7 @@
         <gmaven-version>1.5</gmaven-version>
         <groovy-version>2.1.5</groovy-version>
         <gcommons-version>0.6.2</gcommons-version>
-        <plugins-version>0.3-SNAPSHOT</plugins-version>
+        <plugins-version>0.4-SNAPSHOT</plugins-version>
 
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <!-- Versions used in tests, if updated => tests need to be updated as well -->
