@@ -371,10 +371,10 @@
                             <assertGroovy>
                                 new File( outputDirectory, 'pl-483/about/' ).listFiles().size() == 14
                                 new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.file }
-                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^Commit\s+:\s+\[[a-z0-9]{7}\]\[[a-z0-9]{40}\]$/ }}
-                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^Commit Date\s+:\s+\[\w+, \d+ \w+ \d{4} \d{2}:\d{2}:\d{2} \+\d{4}\]$/ }}
-                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^Commit Author\s+:\s+\[.+?\]$/ }}
-                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^Commit Message\s+:\s+\[.+?\]?$/ }}
+                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^\s?Commit\s+:\s+\[[a-z0-9]{7}\]\[[a-z0-9]{40}\]$/ }}
+                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^\s?Commit Date\s+:\s+\[\w+, \d+ \w+ \d{4} \d{2}:\d{2}:\d{2} [+-]\d{4}\]$/ }}
+                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^\s?Commit Author\s+:\s+\[.+?\]$/ }}
+                                new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^\s?Commit Message\s+:\s+\[.+?\]?$/ }}
                                 new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^.+?\Qorg.apache.maven:maven-core:jar\E.+?$/ }}
                                 new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^.+?\Qcom.github.goldin:gcommons:jar\E.+?$/ }}
                                 new File( outputDirectory, 'pl-483/about/' ).listFiles().every{ File f -> f.text.readLines().any{ it.trim() ==~ /^.+?\Qjunit:junit:jar\E.+?$/ }}
