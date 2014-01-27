@@ -62,7 +62,7 @@
   <keepDependencies>false</keepDependencies>
   <properties />
   <scm class="hudson.scm.NullSCM" />
-  <assignedNode></assignedNode>
+  <assignedNode />
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

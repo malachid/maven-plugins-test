@@ -115,7 +115,7 @@
   </scm>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>6</scmCheckoutRetryCount>
-  <assignedNode></assignedNode>
+  <assignedNode />
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>true</blockBuildWhenDownstreamBuilding>

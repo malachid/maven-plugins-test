@@ -63,7 +63,7 @@
       <url>http://code.google.com/p/ldpath/source/</url>
     </browser>
   </scm>
-  <assignedNode></assignedNode>
+  <assignedNode />
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
