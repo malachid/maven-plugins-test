@@ -5,8 +5,8 @@
     </statuses>
     <resolvers>
         <url name='jetbrains-repo'   alwaysCheckExactRevision='yes' checkmodified='true'>
-            <ivy      pattern='http://teamcity.jetbrains.com/guestAuth/repository/download/[module]/[revision]/teamcity-ivy.xml'/>
-            <artifact pattern='http://teamcity.jetbrains.com/guestAuth/repository/download/[module]/[revision]/[artifact](.[ext])'/>
+            <ivy      pattern='http://teamcity.jetbrains.com/guestAuth/repository/download/[module]/latest.lastSuccessful/teamcity-ivy.xml'/>
+            <artifact pattern='http://teamcity.jetbrains.com/guestAuth/repository/download/[module]/latest.lastSuccessful/[artifact](.[ext])'/>
         </url>
     </resolvers>
     <modules>

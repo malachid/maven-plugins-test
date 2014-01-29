@@ -43,9 +43,9 @@
                                 <name>idea-build-number</name>
                                 <value>
                                 {{
-                                    'http://teamcity.jetbrains.com/guestAuth/repository/download/bt343/latest.lastSuccessful/teamcity-ivy.xml'.
+                                    'http://teamcity.jetbrains.com/guestAuth/repository/download/bt410/latest.lastSuccessful/teamcity-ivy.xml'.
                                     toURL().text.
-                                    findAll( /revision="(\d+).lastSuccessful"/ ){ it[ 1 ] }[ 0 ]
+                                    findAll( /revision="(.*)\.lastSuccessful"/ ){ it[ 1 ] }[ 0 ]
                                 }}
                                 </value>
                             </property>
@@ -79,7 +79,7 @@
                                 <!-- Wrong groupId -->
                                 <dependency>
                                     <groupId>ivy.orgGGG</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/annotations</classifier>
                                 </dependency>
@@ -93,28 +93,28 @@
                                 <!-- Wrong version -->
                                 <dependency>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>123456789</version>
                                     <classifier>core/annotations</classifier>
                                 </dependency>
                                 <!-- Wrong version -->
                                 <dependency>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest~~~~~lastSuccessful</version>
                                     <classifier>core/annotations</classifier>
                                 </dependency>
                                 <!-- Wrong classifier -->
                                 <dependency>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core-annotations-no-such-file</classifier>
                                 </dependency>
                                 <!-- Wrong type -->
                                 <dependency>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/annotations</classifier>
                                     <type>zip</type>
@@ -175,16 +175,16 @@
                             <dir>${outputDirectory}/dependencies-mix</dir>
                             <dependencies>
                                 <dependency>
-                                    <!-- http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&buildTypeId=bt343&tab=artifacts&guest=1 -->
+                                    <!-- http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&buildTypeId=bt410&tab=artifacts&guest=1 -->
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/annotations</classifier>
                                 </dependency>
                                 <dependency>
-                                    <!-- http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&buildTypeId=bt343&tab=artifacts&guest=1 -->
+                                    <!-- http://teamcity.jetbrains.com/viewLog.html?buildId=lastSuccessful&buildTypeId=bt410&tab=artifacts&guest=1 -->
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/asm</classifier>
                                 </dependency>
@@ -260,14 +260,14 @@
                                     <dependencies>
                                         <dependency>
                                             <groupId>ivy.org</groupId>
-                                            <artifactId>bt343</artifactId>
+                                            <artifactId>bt410</artifactId>
                                             <version>latest.lastSuccessful</version>
                                             <classifier>core/annotations</classifier>
                                             <destFileName>annotations.jar</destFileName>
                                         </dependency>
                                         <dependency>
                                             <groupId>ivy.org</groupId>
-                                            <artifactId>bt343</artifactId>
+                                            <artifactId>bt410</artifactId>
                                             <version>latest.lastSuccessful</version>
                                             <classifier>core/intellij-core</classifier>
                                             <destFileName>intellij-core.jar</destFileName>
@@ -278,8 +278,8 @@
                                     <targetPath>${outputDirectory}/idea-unpacked-1</targetPath>
                                     <dependency>
                                         <groupId>ivy.org</groupId>
-                                        <artifactId>bt343</artifactId>
-                                        <version>${idea-build-number}</version>
+                                        <artifactId>bt410</artifactId>
+                                        <version>latest.lastSuccessful</version>
                                         <classifier>core/intellij-core</classifier>
                                     </dependency>
                                     <unpack>true</unpack>
@@ -288,7 +288,7 @@
                                     <targetPath>${outputDirectory}/idea-unpacked-2</targetPath>
                                     <dependency>
                                         <groupId>ivy.org</groupId>
-                                        <artifactId>bt343</artifactId>
+                                        <artifactId>bt410</artifactId>
                                         <version>latest.lastSuccessful</version>
                                         <classifier>core/intellij-core</classifier>
                                     </dependency>
@@ -412,14 +412,14 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/annotations</classifier>
                                     <destFileName>annotations.jar</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>ivy.org</groupId>
-                                    <artifactId>bt343</artifactId>
+                                    <artifactId>bt410</artifactId>
                                     <version>latest.lastSuccessful</version>
                                     <classifier>core/intellij-core</classifier>
                                     <destFileName>intellij-core.jar</destFileName>
